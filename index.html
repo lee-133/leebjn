@@ -1,20 +1,138 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the header */
+.header {
+  height: 100px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #1434ea, #1ffa06 ) ;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+
+  .navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #1ffa069f;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer formatting */
+.footer {
+  padding: 14px 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #1434ea; /* Blue background */
+  color: white; /* White text */
+}
+
+</style>
+</head>
 <body>
 
-<!-- Nav Bar -->
-<nav class="w3-bar w3-black">
-  <a href="#Home" class="w3-button w3-bar-item">Home</a>
-  <a href="#About" class="w3-button w3-bar-item">About</a>
-  <a href="#Contact" class="w3-button w3-bar-item">Contact</a>
-</nav>
+<div class="header">
+  <h1>Lee's Website</h1>
+  <p>Still a WIP. More to come.</p>
+</div>
 
-<!-- Header -->
-<div class="w3-container w3-blue">
-  <h1>Lee's Page</h1></div>
-<p>Under Construction</p>
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">More Info</a>
+  <a href="#" class="right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Building a Website</h2>
+      <h5>July 8th, 2023</h5>
+      <p>Building a website from scratch but have no idea what I am doing.</p>
+    </div>
+
+<div>
+  <div class="footer">
+    <h2>Maximum Effort!</h2>
+  </div>
+</div>
+
 </body>
 </html>
